@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+<!--HEAD-->
+<head>
+	<!--META UTF-8-->
+	<meta charset="UTF-8">
+	<!--META VIEWPORT-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--TITLE-->
+	<title> </title>
+	<!--MAIN CSS LINK-->
+	<link rel="stylesheet" href="css/main.css">
+	<!--ANIMATE.CSS LINK-->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- BOOTSTRAP LINK -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<!--JQUERY-UI-->
+	<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+	
+</head>
+<!-- body -->
+<body>
+
+<div id="header">
+	<div id="logo">Code Text Editor</div>
+
+	<div id="buttonContainer">
+		<div class="toggleButton active" id="html">HTML</div>
+		<div class="toggleButton" id="css">CSS</div>
+		<div class="toggleButton" id="javascript">JavaScript</div>
+		<div class="toggleButton active" id="output">Output</div>
+	</div>
+</div>
+
+<div id="bodyContainer">
+	<textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World</p></textarea>
+
+	<textarea id="cssPanel" class="panel hidden">p { color: blue; }</textarea>
+
+	<textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Rodrigo";</textarea>
+
+	<iframe id="outputPanel" class="panel"></iframe>
+</div>
+<!-- JQUERY LINK -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--JQUERY-UI-JAVASCRIPT-->
+	<script src="jquery-ui/jquery-ui.js"></script>
+<!-- JAVASCRIPT LINK -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
